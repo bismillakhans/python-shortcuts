@@ -7,7 +7,7 @@ cv2 reads RGB format most of thae packages runs on BGR so convert RGB to BGR
 
     rgb_frame = frame[:, :, ::-1]
     
- ## Reads a  floder files from directory
+ ## Reads a  FOLDER files from directory
 ````
 
 for dirname, _, filenames in os.walk('/content/gdrive/My Drive/New/'):
