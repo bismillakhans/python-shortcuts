@@ -1,4 +1,4 @@
-# python-shortcuts
+# python-shortcuts:smile:
 simple tricks and tips for efficient coding in python 
 
 ## Channel changing in images
@@ -7,7 +7,7 @@ cv2 reads RGB format most of thae packages runs on BGR so convert RGB to BGR
 
     rgb_frame = frame[:, :, ::-1]
     
- ## Reads a  FOLDER files from directory
+ ## Reads a  FOLDER files from directory:bug:
 ````
 
 for dirname, _, filenames in os.walk('/content/gdrive/My Drive/New/'):
