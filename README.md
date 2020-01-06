@@ -17,3 +17,24 @@ for dirname, _, filenames in os.walk('/content/gdrive/My Drive/New/'):
         if not os.path.exists(filename):
             os.mkdir(filename)
 ```` 
+## convert image in to octect stream :hand:
+
+````
+    frame=cv2.imread('image.png')
+    ret,buf = cv2.imencode('.png', frame)
+    # ret,buf2 = cv2.imencode('.png', frame)
+
+    # stream-ify the buffer
+    stream = io.BytesIO(buf)
+````
+## list conversion:train:
+````
+list(map(lambda x: x.face_id, faces_1))
+
+````
+
+## writing condition in list:train:
+
+````
+ next(x for x in faces_1 if x.face_id == face_ID)
+````
