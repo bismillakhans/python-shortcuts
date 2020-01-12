@@ -38,3 +38,15 @@ list(map(lambda x: x.face_id, faces_1))
 ````
  next(x for x in faces_1 if x.face_id == face_ID)
 ````
+
+### advanced python array unpacking :handbag:
+````
+regions = ['pfc', 'ifg', 'sts', 'atl', 'acc']
+first, *rest, last = regions
+````
+### array filtering using lamda function :spider_web:
+
+````
+data = [(3, 4), (1, 2), (0, 1), (2, 7), (3, 3)]
+list(filter(lambda x: sum(x) > 5, data))
+````
