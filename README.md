@@ -50,3 +50,29 @@ first, *rest, last = regions
 data = [(3, 4), (1, 2), (0, 1), (2, 7), (3, 3)]
 list(filter(lambda x: sum(x) > 5, data))
 ````
+## sample .env files for django
+
+````
+SECRET_KEY=sample
+DEBUG=False
+ALLOWED_HOSTS=127.0.0.1
+SQL_ENGINE=django.db.backends.postgresql_psycopg2
+SQL_DATABASE=
+SQL_USER=
+SQL_PASSWORD=
+SQL_HOST=
+SQL_PORT=
+USE_S3=true
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY_ID=
+````
+
+
+##Generate random secret key in Python :random:
+
+````
+from binascii import hexlify
+key = hexlify(os.urandom(20))
+key.decode()
+````
+
