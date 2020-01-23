@@ -76,4 +76,9 @@ from binascii import hexlify
 key = hexlify(os.urandom(20))
 key.decode()
 ````
+##Heroku django Procfile configurations
+````
 
+release: python manage.py migrate
+web: gunicorn djreact.wsgi --log-file -
+````
