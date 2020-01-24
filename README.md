@@ -72,6 +72,7 @@ AWS_SECRET_ACCESS_KEY_ID=
 ##Generate random secret key in Python :random:
 
 ````
+import os
 from binascii import hexlify
 key = hexlify(os.urandom(20))
 key.decode()
